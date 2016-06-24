@@ -1,0 +1,18 @@
+ Volume in drive D is New Volume
+ Volume Serial Number is 9173-A020
+
+ Directory of D:\HelloWorldServlet\WebContent\WEB-INF\lib
+
+27-05-2016  20:00    <DIR>          .
+27-05-2016  20:00    <DIR>          ..
+27-05-2016  20:00                 0 1.txt
+26-05-2016  12:46            43,581 asm-3.3.1.jar
+26-05-2016  12:46            84,697 java-json.jar
+26-05-2016  12:46           436,689 jersey-core-1.19.jar
+26-05-2016  12:46           702,882 jersey-server-1.19 (1).jar
+26-05-2016  12:46           702,882 jersey-server-1.19.jar
+25-05-2016  18:30         1,581,066 mockito-all-1.9.5.jar
+25-05-2016  14:30           540,852 mysql-connector-java-5.0.8-bin.jar
+25-05-2016  16:33           835,600 TestNG.jar
+               9 File(s)      4,928,249 bytes
+               2 Dir(s)  265,042,128,896 bytes free

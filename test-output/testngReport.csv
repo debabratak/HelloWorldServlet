@@ -1,0 +1,14 @@
+UserServiceTest,testGetRowCount(),PASS
+CalculatorTest,setup(),PASS
+CalculatorTest,sub1(),PASS
+CalculatorTest,div2(),PASS
+CalculatorTest,sub2(),PASS
+CalculatorTest,div1(),PASS
+CalculatorTest,mul(),PASS
+CalculatorTest,add(),PASS
+CalculatorTest,div3(),PASS
+CalculatorTest,div4(),PASS
+CalculatorTest,sub3(),PASS
+CalculatorTest,sub4(),PASS
+NameParserTest,setUp(),PASS
+NameParserTest,shouldFindPersonByLastName1(),PASS

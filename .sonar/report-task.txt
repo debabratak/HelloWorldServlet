@@ -1,0 +1,5 @@
+projectKey=HelloWorldServlet
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/HelloWorldServlet
+ceTaskId=AVVKB1IyzAIWwvFTJYzf
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVVKB1IyzAIWwvFTJYzf

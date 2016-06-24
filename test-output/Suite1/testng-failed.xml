@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]">
+  <test name="FirstTest(failed)">
+    <classes>
+      <class name="com.srccodes.example.UserServiceTest">
+        <methods>
+          <include name="testGetRowCount"/>
+        </methods>
+      </class> <!-- com.srccodes.example.UserServiceTest -->
+      <class name="com.srccodes.example.NameParserTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.srccodes.example.NameParserTest -->
+      <class name="com.srccodes.example.CalculatorTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.srccodes.example.CalculatorTest -->
+    </classes>
+  </test> <!-- FirstTest(failed) -->
+  <test name="SecondTest(failed)">
+    <classes>
+      <class name="com.srccodes.example.NameParserTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.srccodes.example.NameParserTest -->
+      <class name="com.srccodes.example.CalculatorTest">
+        <methods>
+          <include name="sub2"/>
+          <include name="sub1"/>
+          <include name="sub4"/>
+          <include name="sub3"/>
+          <include name="mul"/>
+          <include name="add"/>
+          <include name="div1"/>
+          <include name="div2"/>
+          <include name="div3"/>
+          <include name="div4"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.srccodes.example.CalculatorTest -->
+    </classes>
+  </test> <!-- SecondTest(failed) -->
+  <test name="ThirdTest(failed)">
+    <classes>
+      <class name="com.srccodes.example.NameParserTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="shouldFindPersonByLastName1"/>
+        </methods>
+      </class> <!-- com.srccodes.example.NameParserTest -->
+      <class name="com.srccodes.example.CalculatorTest">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.srccodes.example.CalculatorTest -->
+    </classes>
+  </test> <!-- ThirdTest(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

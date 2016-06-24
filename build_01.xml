@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="HelloWorldServlet">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../Software_Installation/sts-bundle/sts-3.7.2.RELEASE/"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+    <path id="Pivotal tc Server v3.0 - v3.1 [Pivotal tc Server Developer Edition (Runtime) v3.1].libraryclasspath">
+        <pathelement location="../Software_Installation/sts-bundle/pivotal-tc-server-developer-3.1.2.RELEASE/tomcat-8.0.26.B.RELEASE/lib/annotations-api.jar"/>
+        <pathelement location="../Software_Installation/sts-bundle/pivotal-tc-server-developer-3.1.2.RELEASE/tomcat-8.0.26.B.RELEASE/lib/catalina-ant.jar"/>
+        <pathelement location="../Software_Installation/sts-bundle/pivotal-tc-server-developer-3.1.2.RELEASE/tomcat-8.0.26.B.RELEASE/lib/catalina-ha.jar"/>
+        <pathelement location="../Software_Installation/sts-bundle/pivotal-tc-server-developer-3.1.2.RELEASE/tomcat-8.0.26.B.RELEASE/lib/catalina-storeconfig.jar"/>
+        <pathelement location="../Software_Installation/sts-bundle/pivotal-tc-server-developer-3.1.2.RELEASE/tomcat-8.0.26.B.RELEASE/lib/catalina-tribes.jar"/>
+        <pathelement location="../Software_Installation/sts-bundle/pivotal-tc-server-developer-3.1.2.RELEASE/tomcat-8.0.26.B.RELEASE/lib/catalina.jar"/>
+        <pathelement location="../Software_Installation/sts-bundle/pivotal-tc-server-developer-3.1.2.RELEASE/tomcat-8.0.26.B.RELEASE/lib/ecj-4.4.2.jar"/>
+        <pathelement location="../Software_Installation/sts-bundle/pivotal-tc-server-developer-3.1.2.RELEASE/tomcat-8.0.26.B.RELEASE/lib/el-api.jar"/>
+        <pathelement location="../Software_Installation/sts-bundle/pivotal-tc-server-developer-3.1.2.RELEASE/tomcat-8.0.26.B.RELEASE/lib/jasper-el.jar"/>
+        <pathelement location="../Software_Installation/sts-bundle/pivotal-tc-server-developer-3.1.2.RELEASE/tomcat-8.0.26.B.RELEASE/lib/jasper.jar"/>
+        <pathelement location="../Software_Installation/sts-bundle/pivotal-tc-server-developer-3.1.2.RELEASE/tomcat-8.0.26.B.RELEASE/lib/jsp-api.jar"/>
+        <pathelement location="../Software_Installation/sts-bundle/pivotal-tc-server-developer-3.1.2.RELEASE/tomcat-8.0.26.B.RELEASE/lib/security/com.springsource.org.bouncycastle.jce-1.46.0.jar"/>
+        <pathelement location="../Software_Installation/sts-bundle/pivotal-tc-server-developer-3.1.2.RELEASE/tomcat-8.0.26.B.RELEASE/lib/security/jasypt-1.9.2.jar"/>
+        <pathelement location="../Software_Installation/sts-bundle/pivotal-tc-server-developer-3.1.2.RELEASE/tomcat-8.0.26.B.RELEASE/lib/servlet-api.jar"/>
+        <pathelement location="../Software_Installation/sts-bundle/pivotal-tc-server-developer-3.1.2.RELEASE/tomcat-8.0.26.B.RELEASE/lib/tcServer3.jar"/>
+        <pathelement location="../Software_Installation/sts-bundle/pivotal-tc-server-developer-3.1.2.RELEASE/tomcat-8.0.26.B.RELEASE/lib/tomcat-api.jar"/>
+        <pathelement location="../Software_Installation/sts-bundle/pivotal-tc-server-developer-3.1.2.RELEASE/tomcat-8.0.26.B.RELEASE/lib/tomcat-coyote.jar"/>
+        <pathelement location="../Software_Installation/sts-bundle/pivotal-tc-server-developer-3.1.2.RELEASE/tomcat-8.0.26.B.RELEASE/lib/tomcat-dbcp.jar"/>
+        <pathelement location="../Software_Installation/sts-bundle/pivotal-tc-server-developer-3.1.2.RELEASE/tomcat-8.0.26.B.RELEASE/lib/tomcat-i18n-es.jar"/>
+        <pathelement location="../Software_Installation/sts-bundle/pivotal-tc-server-developer-3.1.2.RELEASE/tomcat-8.0.26.B.RELEASE/lib/tomcat-i18n-fr.jar"/>
+        <pathelement location="../Software_Installation/sts-bundle/pivotal-tc-server-developer-3.1.2.RELEASE/tomcat-8.0.26.B.RELEASE/lib/tomcat-i18n-ja.jar"/>
+        <pathelement location="../Software_Installation/sts-bundle/pivotal-tc-server-developer-3.1.2.RELEASE/tomcat-8.0.26.B.RELEASE/lib/tomcat-jdbc.jar"/>
+        <pathelement location="../Software_Installation/sts-bundle/pivotal-tc-server-developer-3.1.2.RELEASE/tomcat-8.0.26.B.RELEASE/lib/tomcat-jni.jar"/>
+        <pathelement location="../Software_Installation/sts-bundle/pivotal-tc-server-developer-3.1.2.RELEASE/tomcat-8.0.26.B.RELEASE/lib/tomcat-util-scan.jar"/>
+        <pathelement location="../Software_Installation/sts-bundle/pivotal-tc-server-developer-3.1.2.RELEASE/tomcat-8.0.26.B.RELEASE/lib/tomcat-util.jar"/>
+        <pathelement location="../Software_Installation/sts-bundle/pivotal-tc-server-developer-3.1.2.RELEASE/tomcat-8.0.26.B.RELEASE/lib/tomcat-websocket.jar"/>
+        <pathelement location="../Software_Installation/sts-bundle/pivotal-tc-server-developer-3.1.2.RELEASE/tomcat-8.0.26.B.RELEASE/lib/websocket-api.jar"/>
+    </path>
+    <path id="Maven Dependencies.libraryclasspath">
+        <pathelement location="C:/Users/debabratak/.m2/repository/asm/asm/3.3.1/asm-3.3.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/com/sun/jersey/jersey-bundle/1.19/jersey-bundle-1.19.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/json/json/20140107/json-20140107.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/com/sun/jersey/jersey-server/1.19/jersey-server-1.19.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/com/sun/jersey/jersey-core/1.19/jersey-core-1.19.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/com/sun/jersey/jersey-json/1.8/jersey-json-1.8.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.7.1/jackson-core-asl-1.7.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.7.1/jackson-mapper-asl-1.7.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/codehaus/jackson/jackson-jaxrs/1.7.1/jackson-jaxrs-1.7.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/codehaus/jackson/jackson-xc/1.7.1/jackson-xc-1.7.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/junit/junit/4.11/junit-4.11.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/testng/testng/6.5.2/testng-6.5.2.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/com/beust/jcommander/1.12/jcommander-1.12.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/yaml/snakeyaml/1.6/snakeyaml-1.6.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/mockito/mockito-all/1.9.5/mockito-all-1.9.5.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/pitest/pitest/1.1.7/pitest-1.1.7.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/pitest/pitest-maven/1.1.7/pitest-maven-1.1.7.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.1/doxia-sink-api-1.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/reporting/maven-reporting-impl/2.0.4.3/maven-reporting-impl-2.0.4.3.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/doxia/doxia-core/1.0/doxia-core-1.0.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.0/doxia-site-renderer-1.0.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/codehaus/plexus/plexus-i18n/1.0-beta-7/plexus-i18n-1.0-beta-7.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/codehaus/plexus/plexus-velocity/1.1.7/plexus-velocity-1.1.7.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/velocity/velocity/1.5/velocity-1.5.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/doxia/doxia-decoration-model/1.0/doxia-decoration-model-1.0.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/commons-collections/commons-collections/3.2/commons-collections-3.2.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/doxia/doxia-module-apt/1.0/doxia-module-apt-1.0.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/doxia/doxia-module-fml/1.0/doxia-module-fml-1.0.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/doxia/doxia-module-xdoc/1.0/doxia-module-xdoc-1.0.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/doxia/doxia-module-xhtml/1.0/doxia-module-xhtml-1.0.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/commons-validator/commons-validator/1.2.0/commons-validator-1.2.0.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/commons-digester/commons-digester/1.6/commons-digester-1.6.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/shared/maven-doxia-tools/1.0.2/maven-doxia-tools-1.0.2.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0-beta-6/wagon-provider-api-1.0-beta-6.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/scm/maven-scm-api/1.9.4/maven-scm-api-1.9.4.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/scm/maven-scm-manager-plexus/1.9.4/maven-scm-manager-plexus-1.9.4.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/scm/maven-scm-provider-accurev/1.9.4/maven-scm-provider-accurev-1.9.4.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/scm/maven-scm-provider-bazaar/1.9.4/maven-scm-provider-bazaar-1.9.4.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/scm/maven-scm-provider-clearcase/1.9.4/maven-scm-provider-clearcase-1.9.4.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/scm/maven-scm-provider-cvsexe/1.9.4/maven-scm-provider-cvsexe-1.9.4.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/scm/maven-scm-provider-cvs-commons/1.9.4/maven-scm-provider-cvs-commons-1.9.4.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/scm/maven-scm-provider-cvsjava/1.9.4/maven-scm-provider-cvsjava-1.9.4.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/netbeans/lib/cvsclient/20060125/cvsclient-20060125.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/ch/ethz/ganymed/ganymed-ssh2/build210/ganymed-ssh2-build210.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/scm/maven-scm-provider-gitexe/1.9.4/maven-scm-provider-gitexe-1.9.4.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/scm/maven-scm-provider-git-commons/1.9.4/maven-scm-provider-git-commons-1.9.4.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/scm/maven-scm-provider-hg/1.9.4/maven-scm-provider-hg-1.9.4.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/scm/maven-scm-provider-perforce/1.9.4/maven-scm-provider-perforce-1.9.4.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/scm/maven-scm-provider-starteam/1.9.4/maven-scm-provider-starteam-1.9.4.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/scm/maven-scm-provider-svnexe/1.9.4/maven-scm-provider-svnexe-1.9.4.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/scm/maven-scm-provider-svn-commons/1.9.4/maven-scm-provider-svn-commons-1.9.4.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/scm/maven-scm-provider-synergy/1.9.4/maven-scm-provider-synergy-1.9.4.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/scm/maven-scm-provider-vss/1.9.4/maven-scm-provider-vss-1.9.4.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/scm/maven-scm-provider-tfs/1.9.4/maven-scm-provider-tfs-1.9.4.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/scm/maven-scm-provider-integrity/1.9.4/maven-scm-provider-integrity-1.9.4.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/com/mks/api/mksapi-jar/4.10.9049/mksapi-jar-4.10.9049.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/codehaus/groovy/groovy-all/1.7.6/groovy-all-1.7.6.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/scm/maven-scm-provider-jazz/1.9.4/maven-scm-provider-jazz-1.9.4.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/surefire/surefire-booter/2.17/surefire-booter-2.17.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/surefire/surefire-api/2.17/surefire-api-2.17.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/surefire/maven-surefire-common/2.17/maven-surefire-common-2.17.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/plugin-tools/maven-plugin-annotations/3.2/maven-plugin-annotations-3.2.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/maven-plugin-descriptor/2.0.9/maven-plugin-descriptor-2.0.9.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/maven-core/2.0.9/maven-core-2.0.9.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/maven-monitor/2.0.9/maven-monitor-2.0.9.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/maven-toolchain/2.2.1/maven-toolchain-2.2.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/slf4j/jul-to-slf4j/1.7.12/jul-to-slf4j-1.7.12.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/uk/org/lidalia/sysout-over-slf4j/1.0.2/sysout-over-slf4j-1.0.2.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/pitest/pitest-html-report/1.1.7/pitest-html-report-1.1.7.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/jacoco/jacoco-maven-plugin/0.7.6.201602180812/jacoco-maven-plugin-0.7.6.201602180812.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/shared/file-management/1.2.1/file-management-1.2.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/jacoco/org.jacoco.agent/0.7.6.201602180812/org.jacoco.agent-0.7.6.201602180812-runtime.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/jacoco/org.jacoco.core/0.7.6.201602180812/org.jacoco.core-0.7.6.201602180812.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/jacoco/org.jacoco.report/0.7.6.201602180812/org.jacoco.report-0.7.6.201602180812.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/ow2/asm/asm-debug-all/5.0.4/asm-debug-all-5.0.4.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/jacoco/org.jacoco.agent/0.7.6.201602180812/org.jacoco.agent-0.7.6.201602180812.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/testpackage/coverage-jacoco/0.3.1/coverage-jacoco-0.3.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/org/testpackage/testpackage/0.3.1/testpackage-0.3.1.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/args4j/args4j/2.0.26/args4j-2.0.26.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/jline/jline/2.11/jline-2.11.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/com/google/guava/guava/15.0/guava-15.0.jar"/>
+        <pathelement location="C:/Users/debabratak/.m2/repository/com/googlecode/javaewah/JavaEWAH/0.8.5/JavaEWAH-0.8.5.jar"/>
+    </path>
+    <path id="TestNG.libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}plugins/org.testng.eclipse_6.9.11.201604020423/lib/testng.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.testng.eclipse_6.9.11.201604020423/lib/jcommander.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.testng.eclipse_6.9.11.201604020423/lib/bsh-2.0b4.jar"/>
+        <pathelement location="${ECLIPSE_HOME}plugins/org.testng.eclipse_6.9.11.201604020423/lib/snakeyaml.jar"/>
+    </path>
+    <path id="HelloWorldServlet.classpath">
+        <pathelement location="target/classes"/>
+        <path refid="Pivotal tc Server v3.0 - v3.1 [Pivotal tc Server Developer Edition (Runtime) v3.1].libraryclasspath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+        <pathelement location="WebContent/WEB-INF/lib/mysql-connector-java-5.0.8-bin.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/TestNG.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/mockito-all-1.9.5.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/asm-3.3.1.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/java-json.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jersey-core-1.19.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jersey-server-1.19 (1).jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jersey-server-1.19.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/jcommander.jar"/>
+        <pathelement location="WebContent/WEB-INF/lib/testng-6.8.jar"/>
+        <path refid="TestNG.libraryclasspath"/>
+        <pathelement location="../mysql-connector-java-5.0.8-bin.jar"/>
+    </path>
+    <path id="run.com.srccodes.example.test.classpath">
+        <path refid="HelloWorldServlet.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.HelloWorldServlet (1).classpath">
+        <path refid="HelloWorldServlet.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.HelloWorldServlet (2).classpath">
+        <path refid="HelloWorldServlet.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.ManageUserDataTest.classpath">
+        <path refid="HelloWorldServlet.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.TestCall.callTest.classpath">
+        <path refid="HelloWorldServlet.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.TestCall.classpath">
+        <path refid="HelloWorldServlet.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.UserServiceTest (1).classpath">
+        <path refid="HelloWorldServlet.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="target/classes"/>
+        <copy includeemptydirs="false" todir="target/classes">
+            <fileset dir="src">
+                <include name="**/*.java"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="target/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <include name="**/*.java"/>
+            <classpath refid="HelloWorldServlet.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="com.srccodes.example.test">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <classpath refid="run.com.srccodes.example.test.classpath"/>
+        </junit>
+    </target>
+    <target name="HelloWorldServlet (1)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.srccodes.example.test.UserServiceTest" todir="${junit.output.dir}"/>
+            <classpath refid="run.HelloWorldServlet (1).classpath"/>
+        </junit>
+    </target>
+    <target name="HelloWorldServlet (2)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <classpath refid="run.HelloWorldServlet (2).classpath"/>
+        </junit>
+    </target>
+    <target name="ManageUserDataTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.srccodes.example.test.ManageUserDataTest" todir="${junit.output.dir}"/>
+            <classpath refid="run.ManageUserDataTest.classpath"/>
+        </junit>
+    </target>
+    <target name="TestCall.callTest">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.srccodes.example.test.TestCall" todir="${junit.output.dir}"/>
+            <classpath refid="run.TestCall.callTest.classpath"/>
+        </junit>
+    </target>
+    <target name="TestCall">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.srccodes.example.test.TestCall" todir="${junit.output.dir}"/>
+            <classpath refid="run.TestCall.classpath"/>
+        </junit>
+    </target>
+    <target name="UserServiceTest (1)">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.srccodes.example.test.UserServiceTest" todir="${junit.output.dir}"/>
+            <classpath refid="run.UserServiceTest (1).classpath"/>
+        </junit>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>

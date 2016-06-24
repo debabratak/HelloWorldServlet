@@ -1,0 +1,1 @@
+java -jar TestNGXMLToCSV.jar "target/surefire-reports/testng-results.xml" "test-output\testngReport.csv"
