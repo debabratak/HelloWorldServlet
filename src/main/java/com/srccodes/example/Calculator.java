@@ -14,7 +14,7 @@ public class Calculator {
 	
 	private static final Logger logger = 
 			LoggerFactory.getLogger(Calculator.class);
-//	private static double c;
+//	private static double c; --
 	
 	/**
 	 * @param a
